@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "centermymouse",
+	"version": "${version}",
+	"name": "Center My Mouse!",
+	"description": "Makes sure the mouse is centered when opening your inventory after tabbing back into the game",
+	"authors": [
+		"JustAlittleWolf"
+	],
+	"contact": {
+		"sources": "https://github.com/JustAlittleWolf/CenterMyMouse"
+	},
+	"license": "MIT",
+	"icon": "assets/centermymouse/icon.png",
+	"environment": "client",
+	"entrypoints": {},
+	"mixins": [
+		"mousealwayscentered.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": ">=1.18",
+		"java": ">=17"
+	}
+}
