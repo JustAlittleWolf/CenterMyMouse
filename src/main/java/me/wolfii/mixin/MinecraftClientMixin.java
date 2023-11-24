@@ -28,7 +28,6 @@ public abstract class MinecraftClientMixin {
         if(this.currentScreen != null) return;
         if(this.mouse == null) return;
         if(!this.mouse.isCursorLocked()) return;
-        System.out.println("HELLO WORLD");
         ((MouseAccessor)mouse).setX(this.getWindow().getWidth() / 2d);
         ((MouseAccessor)mouse).setY(this.getWindow().getHeight() / 2d);
         InputUtil.setCursorParameters(this.getWindow().getHandle(), InputUtil.GLFW_CURSOR_NORMAL, mouse.getX(), mouse.getY());
